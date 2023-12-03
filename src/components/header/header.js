@@ -1,5 +1,5 @@
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
-import './stylesheets/header.css'
+import './header.css'
 import { useImperativeHandle } from 'react'
 
 export default function Header() {

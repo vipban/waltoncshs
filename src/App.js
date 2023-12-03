@@ -1,7 +1,7 @@
 import './App.css';
 
 // Page Imports
-import Header from './components/header'
+import Header from './components/header/header'
 import Home from './pages/home'
 import Materials from './pages/materials'
 import Locations from './pages/locations'
@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <Header />
+      
       <div className='router-container'>
         <Routes>
           <Route path='/' element={<Home />} />
