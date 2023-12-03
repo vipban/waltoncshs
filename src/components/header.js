@@ -1,6 +1,5 @@
 import { Link, useMatch, useResolvedPath } from 'react-router-dom'
-import './header.css'
-import { useImperativeHandle } from 'react'
+import './stylesheets/header.css'
 
 export default function Header() {
     return <nav className='nav'>
