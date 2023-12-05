@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 .img-slider-img {
     object-fit: cover;
     width: 100%;

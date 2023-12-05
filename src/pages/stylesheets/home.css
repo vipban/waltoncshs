@@ -1,15 +1,30 @@
 body {
     background-color: darkgreen;
+    margin: 0;
+    padding: 0;
 }
 
-.materials-slideshow {
-    padding: 5%;
-    width: 100%;
-}
-
-.materials-slideshow h1 {
+h1 {
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
     color: whitesmoke;
+}
+
+.materials-slideshow {
+    margin: 0;
+    padding: 0 5%;
+    width: 100%;
+}
+
+.calendar {
+    padding: 2rem 0;
+}
+
+.cshs-calendar {
+    border: 0;
+    scroll-behavior: none;
+    padding: 0 5% 5%;
+    width: 100%;
+    height: 30rem;
 }

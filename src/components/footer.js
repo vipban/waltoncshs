@@ -15,9 +15,9 @@ export default function Footer() {
             </nav>
 
             <section className='contact'>
-                <h2>Contact the Developer</h2>
-                <p>(470) 515-3049</p>
-                <p>developer@recycler.com</p>
+                <h2>Contact Us</h2>
+                <p>waltoncshs@gmail.com</p>
+                <p><b>Club Sponsor:</b> Mr. Hubbard (Room 119)</p>
             </section>
         </section>
     )

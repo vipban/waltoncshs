@@ -6,8 +6,8 @@ import Footer from './components/footer'
 
 // Page Imports
 import Home from './pages/home'
-import Materials from './pages/materials'
-import Locations from './pages/locations'
+import Calendar from './pages/calendar'
+import Events from './pages/events'
 
 // React Router
 import { Route, Routes } from 'react-router-dom'
@@ -19,8 +19,8 @@ function App() {
       <div className='router-container'>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/materials' element={<Materials />} />
-          <Route path='/locations' element={<Locations />} />
+          <Route path='/calendar' element={<Calendar />} />
+          <Route path='/events' element={<Events />} />
         </Routes>
       </div>
       <Footer />
