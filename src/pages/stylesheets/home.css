@@ -1,0 +1,15 @@
+body {
+    background-color: darkgreen;
+}
+
+.materials-slideshow {
+    padding: 5%;
+    width: 100%;
+}
+
+.materials-slideshow h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    color: whitesmoke;
+}
