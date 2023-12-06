@@ -2,9 +2,11 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 Footer {
     position: absolute;
     bottom: 0;
+    z-index: 2;
 }

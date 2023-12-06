@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { ArrowBigLeft, ArrowBigRight } from 'lucide-react'
 import './stylesheets/slideshow.css'
 
-export function Slideshow({ imageUrls }) {
+export default function Slideshow({ imageUrls }) {
     const [imageIndex, setImageIndex] = useState(0)
 
     function showNextImage() {

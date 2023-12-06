@@ -2,8 +2,8 @@ import car1 from '../resources/blue-maserati.jpg'
 import car2 from '../resources/McLaren-720S.jpg'
 import car3 from '../resources/Audi-R8.jpg'
 
-import { Slideshow } from '../components/slideshow'
-import Calendar from '../components/calendar'
+import Slideshow from '../components/slideshow'
+import CalendarComponent from '../components/calendar'
 import './stylesheets/home.css'
 
 function Home() {
@@ -11,14 +11,18 @@ function Home() {
 
     return (
         <>
-            <section className='materials-slideshow'>
+            <section className='photos-slideshow'>
                 <h1>Recent Photos</h1>
                 <Slideshow imageUrls={images} />
             </section>
-
+            <hr />
             <section className='calendar'>
                 <h1>Upcoming Events</h1>
-                <Calendar />
+                <CalendarComponent />
+            </section>
+            <hr />
+            <section className='sign-ups'>
+                <h1>Sign Ups</h1>
             </section>
         </>
     )

@@ -1,9 +1,12 @@
 import React from 'react'
+import './stylesheets/calendar.css'
 
-export default function Calendar() {
-    const calendarSrc = "https://calendar.google.com/calendar/embed?src=dcfcdb0b49805229221411d49688fa71211e21ae00f56ba13d58153b6e554d13%40group.calendar.google.com&ctz=America%2FNew_York"
-
+export default function CalendarComponent() {
+    // Styled Calendar
     return (
-        <iframe src={calendarSrc} style={{frameborder: '0', scrolling: 'no'}} className='cshs-calendar'></iframe>
+        <>
+            <iframe src="https://embed.styledcalendar.com/#wg3VOmHPXUHSTNlnUvLk" data-cy="calendar-embed-iframe" className='cshs-calendar'></iframe>
+            <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+        </>
     )
 }

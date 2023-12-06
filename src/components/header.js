@@ -7,8 +7,8 @@ export default function Header() {
             <Link to='/' className='site-title'>Walton CSHS</Link>
             <ul>
                 <CustomLink to='/'>Home</CustomLink>
-                <CustomLink to='calendar'>Calendar</CustomLink>
-                <CustomLink to='events'>Events</CustomLink>
+                <CustomLink to='upcoming-events'>Upcoming Events</CustomLink>
+                <CustomLink to='sign-ups'>Sign-Ups</CustomLink>
             </ul>
         </nav>
     )

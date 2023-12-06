@@ -6,8 +6,8 @@ import Footer from './components/footer'
 
 // Page Imports
 import Home from './pages/home'
-import Calendar from './pages/calendar'
-import Events from './pages/events'
+import UpcomingEvents from './pages/upcoming-events'
+import SignUps from './pages/sign-ups'
 
 // React Router
 import { Route, Routes } from 'react-router-dom'
@@ -19,8 +19,8 @@ function App() {
       <div className='router-container'>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/calendar' element={<Calendar />} />
-          <Route path='/events' element={<Events />} />
+          <Route path='/upcoming-events' element={<UpcomingEvents />} />
+          <Route path='/sign-ups' element={<SignUps />} />
         </Routes>
       </div>
       <Footer />

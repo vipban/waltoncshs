@@ -1,0 +1,7 @@
+.cshs-calendar {
+    border: 0;
+    scroll-behavior: none;
+    padding: 0 5%;
+    width: 100%;
+    min-height: 50rem;
+}
