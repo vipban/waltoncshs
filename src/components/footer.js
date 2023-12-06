@@ -9,8 +9,8 @@ export default function Footer() {
                 <h2>Navigation</h2>
                 <ul>
                     <CustomLink to='/'>Home</CustomLink>
-                    <CustomLink to='materials'>Materials</CustomLink>
-                    <CustomLink to='locations'>Locations</CustomLink>
+                    <CustomLink to='upcoming-events'>Upcoming Events</CustomLink>
+                    <CustomLink to='sign-ups'>Sign-Ups</CustomLink>
                 </ul>
             </nav>
 
