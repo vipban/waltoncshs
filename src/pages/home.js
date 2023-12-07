@@ -7,13 +7,18 @@ import CalendarComponent from '../components/calendar'
 import './stylesheets/home.css'
 
 function Home() {
-    const images = [car1, car2, car3]
+    // REPLACE WITH ACTUAL IMAGES
+    const images = [
+        { url: car1, alt: 'Car One' },
+        { url: car2, alt: 'Car Two' },
+        { url: car3, alt: 'Car Three'}
+    ]
 
     return (
         <>
             <section className='photos-slideshow'>
                 <h1>Recent Photos</h1>
-                <Slideshow imageUrls={images} />
+                <Slideshow images={images} />
             </section>
             <hr />
             <section className='calendar'>
