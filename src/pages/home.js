@@ -4,6 +4,7 @@ import car3 from '../resources/Audi-R8.jpg'
 
 import Slideshow from '../components/slideshow'
 import CalendarComponent from '../components/calendar'
+import SignUp from '../components/sign-up'
 import './stylesheets/home.css'
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
         { url: car2, alt: 'Car Two' },
         { url: car3, alt: 'Car Three'}
     ]
+
 
     return (
         <>
@@ -28,6 +30,7 @@ function Home() {
             <hr />
             <section className='sign-ups'>
                 <h1>Sign Ups</h1>
+                <SignUp />
             </section>
         </>
     )

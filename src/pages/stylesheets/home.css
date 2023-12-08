@@ -21,3 +21,7 @@ hr {
     color: whitesmoke;
     margin: 7vh 0;
 }
+
+.form-embed {
+    padding: 0 5% 5vh;
+}
