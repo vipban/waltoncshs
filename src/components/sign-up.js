@@ -16,7 +16,7 @@ export default function SignUp(props) {
             <h4 className='location'> <MapPin style={{verticalAlign: 'text-top'}}/> {props.location}</h4>
             <p className='times'> <CalendarClock style={{verticalAlign: 'bottom'}}/> {props.startTime} - {props.endTime}</p>
             <button onClick={handleClick}>{isFormVisible ? 'Hide Sign Up Form' : 'Show Sign Up Form'}</button>
-            {isFormVisible && <RegistrationForm name={props.name}/>}
+            {isFormVisible && <RegistrationForm name={props.name} />}
         </section>
     )
 }
