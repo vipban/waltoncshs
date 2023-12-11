@@ -28,10 +28,6 @@ function Home() {
                 <CalendarComponent />
             </section>
             <hr />
-            <section className='sign-ups'>
-                <h1>Sign Ups</h1>
-                <SignUp />
-            </section>
         </>
     )
 }
