@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import SignUp from '../components/sign-up'
 import './stylesheets/sign-ups.css'
 
-// Firebase Imports
+// Firestore Imports
 import { app, db } from '../firebase-config'
 import { collection , getDocs } from 'firebase/firestore'
 
@@ -18,7 +18,8 @@ export default function SignUps() {
                     description: doc.data().description,
                     location: doc.data().location,
                     startTime: doc.data().startTime,
-                    endTime: doc.data().endTime
+                    endTime: doc.data().endTime,
+                    registeredPeople: doc.data().registeredPeople
                 }))
                 setEventArray(events)
                 console.log(events)

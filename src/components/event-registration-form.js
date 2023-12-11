@@ -24,6 +24,7 @@ export default function RegistrationForm(props) {
         } catch (error) {
             console.error('Error adding document: ', error)
         }
+        window.location.reload()
     }
 
     return (
