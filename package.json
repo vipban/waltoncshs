@@ -1,7 +1,7 @@
 {
   "name": "walton-cshs",
   "version": "0.1.0",
-  "homepage": "https://vipban.github.io/waltoncshs/home",
+  "homepage": "https://vipban.github.io/waltoncshs",
   "private": true,
   "dependencies": {
     "@fullcalendar/core": "^6.1.10",
