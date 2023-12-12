@@ -5,7 +5,6 @@ import { MapPin, CalendarClock } from 'lucide-react'
 // Firestore Imports
 import { app, db } from '../firebase-config'
 import { doc , getDoc } from 'firebase/firestore'
-import { registerVersion } from 'firebase/app'
 
 export default function SignUp(props) {
     const [isFormVisible, setIsFormVisible] = useState(false)
@@ -68,8 +67,8 @@ export default function SignUp(props) {
                     </div>
                 )}
             </div>
-            <button onClick={handleClick}>{isFormVisible ? 'Hide Sign Up Form' : 'Show Sign Up Form'}</button>
-            {isFormVisible && <RegistrationForm name={props.name} />}
+            {props.slots > registeredPeople.length && <button onClick={handleClick}>{isFormVisible ? 'Hide Sign Up Form' : 'Show Sign Up Form'}</button>}
+            {isFormVisible && <RegistrationForm name={props.name}/>}
         </section>
     )
 }

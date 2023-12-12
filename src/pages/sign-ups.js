@@ -33,16 +33,25 @@ export default function SignUps() {
 
     return (
         <>
-            {eventArray.map((event, index) => (
-                <SignUp
-                    key={index}
-                    name={event.name}
-                    description={event.description}
-                    location={event.location}
-                    startTime={event.startTime}
-                    endTime={event.endTime}
-                />
-            ))}
+            {eventArray.map((event, index) => {
+                const slotsIndex = event.description.indexOf('Slots:')
+                const length = event.description.length
+
+                const actualDescription = event.description.slice(0, slotsIndex)
+                const slots = event.description.slice(slotsIndex + 7, length)
+                console.log(slots)
+                return (
+                    <SignUp
+                        key={index}
+                        name={event.name}
+                        description={actualDescription}
+                        location={event.location}
+                        startTime={event.startTime}
+                        endTime={event.endTime}
+                        slots={slots}
+                    />
+                )
+            })}
         </>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 // Firestore Imports
 import { app, db } from '../firebase-config'
-import { arrayUnion, doc, serverTimestamp, updateDoc } from 'firebase/firestore'
+import { arrayUnion, doc, updateDoc } from 'firebase/firestore'
 
 export default function RegistrationForm(props) {
     async function handleSubmit(event) {
