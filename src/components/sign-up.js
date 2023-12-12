@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import RegistrationForm from './event-registration-form'
-import { MapPin, CalendarClock } from 'lucide-react'
+import { MapPin, CalendarClock, Users } from 'lucide-react'
 
 // Firestore Imports
 import { app, db } from '../firebase-config'
@@ -44,9 +44,10 @@ export default function SignUp(props) {
             <div className='event-grid'>
                 <div className='event-details'>
                     <h2 className='name'>{props.name}</h2>
-                    <p className='description'>{props.description}</p>
-                    <h4 className='location'> <MapPin style={{verticalAlign: 'text-top'}}/> {props.location}</h4>
-                    <p className='times'> <CalendarClock style={{verticalAlign: 'bottom'}}/> {props.startTime} - {props.endTime}</p>
+                    {props.description ? <p className='description'>{props.description}</p> : <div></div>}
+                    {props.location ? <h4 className='location'> <MapPin style={{verticalAlign: 'text-top'}}/> {props.location}</h4> : <div></div>}
+                    {props.startTime && props.endTime ? <p className='times'> <CalendarClock style={{verticalAlign: 'bottom'}}/> {props.startTime} - {props.endTime}</p> : <div></div>}
+                    <p><Users style={{verticalAlign: 'bottom'}}/> Slots Left: {props.slots - registeredPeople.length}</p>
                 </div>
 
                 {registeredPeople.length > 0 ? (
