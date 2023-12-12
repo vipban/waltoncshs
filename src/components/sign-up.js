@@ -43,7 +43,7 @@ export default function SignUp(props) {
         <section className='event'>
             <div className='event-grid'>
                 <div className='event-details'>
-                    <h2 className='name'>{props.name}</h2>
+                    {props.name ? <h2 className='name'>{props.name}</h2> : <h2>Unnamed Event</h2>}
                     {props.description ? <p className='description'>{props.description}</p> : <div></div>}
                     {props.location ? <h4 className='location'> <MapPin style={{verticalAlign: 'text-top'}}/> {props.location}</h4> : <div></div>}
                     {props.startTime && props.endTime ? <p className='times'> <CalendarClock style={{verticalAlign: 'bottom'}}/> {props.startTime} - {props.endTime}</p> : <div></div>}
