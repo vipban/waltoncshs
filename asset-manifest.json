@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e1455800.css",
+    "main.js": "/static/js/main.2638c064.js",
+    "static/js/787.76214a1a.chunk.js": "/static/js/787.76214a1a.chunk.js",
+    "static/media/McLaren-720S.jpg": "/static/media/McLaren-720S.81f89c6a8c30baabb441.jpg",
+    "static/media/Audi-R8.jpg": "/static/media/Audi-R8.8cdf8fcbcac5ad84a430.jpg",
+    "static/media/blue-maserati.jpg": "/static/media/blue-maserati.479a4e880374a6acdf7a.jpg",
+    "index.html": "/index.html",
+    "main.e1455800.css.map": "/static/css/main.e1455800.css.map",
+    "main.2638c064.js.map": "/static/js/main.2638c064.js.map",
+    "787.76214a1a.chunk.js.map": "/static/js/787.76214a1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1455800.css",
+    "static/js/main.2638c064.js"
+  ]
+}
