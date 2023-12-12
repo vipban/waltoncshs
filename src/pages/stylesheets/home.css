@@ -1,5 +1,5 @@
 body {
-    background-color: #2983A6;
+    background-color: #00080D;
     margin: 0;
     padding: 0;
 }
@@ -20,4 +20,5 @@ h1 {
 hr {
     color: whitesmoke;
     margin: 7vh 0;
+    box-shadow: 0px 4px 32px rgba(135, 206, 250, 0.25);
 }

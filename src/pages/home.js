@@ -27,7 +27,6 @@ function Home() {
                 <h1>Upcoming Events</h1>
                 <CalendarComponent />
             </section>
-            <hr />
         </>
     )
 }

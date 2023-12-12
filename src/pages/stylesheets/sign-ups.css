@@ -1,7 +1,11 @@
+.events {
+    margin-top: 2rem;
+}
+
 .event {
     margin: 1rem;
     padding: 2rem;
-    background-color: #F1F3F5;
+    background-color: #FFFFFF;
     border-radius: 2rem;
 }
 
@@ -88,4 +92,8 @@
 .registered-people p {
     text-align: right;
     margin-right: 1rem;
+}
+
+.footer {
+    margin-top: 2rem;
 }

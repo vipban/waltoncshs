@@ -49,7 +49,7 @@ export default function SignUps() {
     }, [])
 
     return (
-        <>
+        <section className='events'>
             {eventArray.map((event, index) => {
                 if (event !== null) {
                     const slotsIndex = event.description.indexOf('Slots:')
@@ -72,6 +72,6 @@ export default function SignUps() {
                     )
                 }
             })}
-        </>
+        </section>
     )
 }
