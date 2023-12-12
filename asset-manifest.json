@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/waltoncshs/home/static/css/main.e1455800.css",
-    "main.js": "/waltoncshs/home/static/js/main.e66bbabf.js",
-    "static/js/787.c367d6a3.chunk.js": "/waltoncshs/home/static/js/787.c367d6a3.chunk.js",
-    "static/media/McLaren-720S.jpg": "/waltoncshs/home/static/media/McLaren-720S.81f89c6a8c30baabb441.jpg",
-    "static/media/Audi-R8.jpg": "/waltoncshs/home/static/media/Audi-R8.8cdf8fcbcac5ad84a430.jpg",
-    "static/media/blue-maserati.jpg": "/waltoncshs/home/static/media/blue-maserati.479a4e880374a6acdf7a.jpg",
-    "index.html": "/waltoncshs/home/index.html",
-    "main.e1455800.css.map": "/waltoncshs/home/static/css/main.e1455800.css.map",
-    "main.e66bbabf.js.map": "/waltoncshs/home/static/js/main.e66bbabf.js.map",
-    "787.c367d6a3.chunk.js.map": "/waltoncshs/home/static/js/787.c367d6a3.chunk.js.map"
+    "main.css": "/waltoncshs/static/css/main.e1455800.css",
+    "main.js": "/waltoncshs/static/js/main.3c6ff70b.js",
+    "static/js/787.c367d6a3.chunk.js": "/waltoncshs/static/js/787.c367d6a3.chunk.js",
+    "static/media/McLaren-720S.jpg": "/waltoncshs/static/media/McLaren-720S.81f89c6a8c30baabb441.jpg",
+    "static/media/Audi-R8.jpg": "/waltoncshs/static/media/Audi-R8.8cdf8fcbcac5ad84a430.jpg",
+    "static/media/blue-maserati.jpg": "/waltoncshs/static/media/blue-maserati.479a4e880374a6acdf7a.jpg",
+    "index.html": "/waltoncshs/index.html",
+    "main.e1455800.css.map": "/waltoncshs/static/css/main.e1455800.css.map",
+    "main.3c6ff70b.js.map": "/waltoncshs/static/js/main.3c6ff70b.js.map",
+    "787.c367d6a3.chunk.js.map": "/waltoncshs/static/js/787.c367d6a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1455800.css",
-    "static/js/main.e66bbabf.js"
+    "static/js/main.3c6ff70b.js"
   ]
 }
