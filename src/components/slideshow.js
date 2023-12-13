@@ -7,18 +7,16 @@ export default function Slideshow({ images }) {
     const [imageIndex, setImageIndex] = useState(0)
 
     function showNextImage() {
-        setImageIndex(index => {
-            if (index === images.length - 1) return 0
-            return index + 1
-        })
+        setImageIndex(index => (index === images.length - 1 ? 0 : index + 1))
     }
 
     function showPrevImage() {
-        setImageIndex(index => {
-            if (index === 0) return images.length - 1
-            return index - 1
-        })
+        setImageIndex(index => (index === 0 ? images.length - 1 : index - 1))
     }
+
+    // let intervalID = setInterval(showNextImage, 5000)
+    // window.onload = setInterval(showNextImage, 5000)
+    // window.onbeforeunload = clearInterval(intervalID)
 
     return (
         <section
