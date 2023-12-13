@@ -4,7 +4,6 @@ import car3 from '../resources/Audi-R8.jpg'
 
 import Slideshow from '../components/slideshow'
 import CalendarComponent from '../components/calendar'
-import SignUp from '../components/sign-up'
 import './stylesheets/home.css'
 
 function Home() {
