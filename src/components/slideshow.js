@@ -38,10 +38,10 @@ export default function Slideshow({ images }) {
                     />
                 ))}
             </div>
-            <button onClick={showPrevImage} className='img-slider-btn' style={{left: 0}} aria-label='View Previous Image'>
+            <button onClick={showPrevImage} className='img-slider-btn left-btn' style={{left: 0}} aria-label='View Previous Image'>
                 <ArrowBigLeft aria-hidden />
             </button>
-            <button onClick={showNextImage} className='img-slider-btn' style={{right: 0}} aria-label='View Next Image'>
+            <button onClick={showNextImage} className='img-slider-btn right-btn' style={{right: 0}} aria-label='View Next Image'>
                 <ArrowBigRight aria-hidden />
             </button>
             <div style={{

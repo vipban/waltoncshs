@@ -5,6 +5,7 @@
     display: block;
     flex-shrink: 0;
     flex-grow: 0;
+    border-radius: 2rem;
 }
 
 .img-slider-btn {
@@ -21,6 +22,14 @@
 .img-slider-btn:hover,
 .img-slider-btn:focus-visible {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.right-btn {
+    border-radius: 0 2rem 2rem 0;
+}
+
+.left-btn {
+    border-radius: 2rem 0 0 2rem;
 }
 
 .img-slider-btn > * {
