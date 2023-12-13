@@ -4,7 +4,7 @@ body {
     /* background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #2ab7ff 48px), repeating-linear-gradient(#1013c5, #ff003d);
     background-color: #2ab7ff; */
 
-    background-image: radial-gradient(circle at center center, #1013c5, #2ab7ff), repeating-radial-gradient(circle at center center, #1013c5, #ff003d, 96px, transparent 96px);
+    background-image: radial-gradient(circle at center center, #1013c5, #2ab7ff);
     background-blend-mode: multiply;
     background-color: #2ab7ff;
 
