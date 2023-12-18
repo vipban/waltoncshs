@@ -54,9 +54,9 @@ export default function Slideshow({ images }) {
         const deltaX = startX - endX
 
         if (deltaX > swipeThreshold){
-            showNextImage()
+            handleRightButtonClick()
         } else if (deltaX < -swipeThreshold) {
-            showPrevImage()
+            handleLeftButtonClick()
         }
     }
 
