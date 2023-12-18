@@ -2,6 +2,13 @@
     margin-top: 2rem;
 }
 
+.no-events {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
+}
+
 .event {
     margin: 1rem;
     padding: 2rem;

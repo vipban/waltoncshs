@@ -5,6 +5,7 @@ import './stylesheets/sign-ups.css'
 // Firestore Imports
 import { app, db } from '../firebase-config'
 import { collection , getDocs } from 'firebase/firestore'
+import { Underline } from 'lucide-react'
 
 export default function SignUps() {
     const [eventArray, setEventArray] = useState([])
@@ -34,12 +35,11 @@ export default function SignUps() {
                             endTime: doc.data().endTime,
                             registeredPeople: doc.data().registeredPeople
                         })
-                    } else {
-                        return null
                     }
                 })
-                setEventArray(events)
+                setEventArray(events.filter(event => event !== undefined))
                 console.log(events)
+                console.log(events.filter(event => event !== undefined))
             } catch (error) {
                 console.error('Error getting documents: ', error)
             }
@@ -48,10 +48,11 @@ export default function SignUps() {
         fetchData()
     }, [])
 
-    return (
-        <section className='events'>
-            {eventArray.map((event, index) => {
-                if (event !== null) {
+    if (eventArray.length > 0) {
+        return (
+            <section className='events'>
+                <h1>Sign Ups</h1>
+                {eventArray.map((event, index) => {
                     const slotsIndex = event.description.indexOf('Slots:')
                     const length = event.description.length
 
@@ -70,8 +71,15 @@ export default function SignUps() {
                             slots={slots}
                         />
                     )
-                }
-            })}
-        </section>
-    )
+                })}
+            </section>
+        )
+    } else if (eventArray.length === 0) {
+        return (
+            <section className='events'>
+                <h1>Sign Ups</h1>
+                <h3 className='no-events'>No upcoming events</h3>
+            </section>
+        )
+    }
 }
