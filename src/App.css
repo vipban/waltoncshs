@@ -5,6 +5,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+Header, .router-container, Footer {
+    flex: 1;
+}
+
 Footer {
     position: absolute;
     bottom: 0;

@@ -14,7 +14,7 @@ import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <>
+    <div className='content'>
       <Header />
       <div className='router-container'>
         <Routes>
@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
