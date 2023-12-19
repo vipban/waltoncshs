@@ -4,45 +4,40 @@ import './stylesheets/slideshow.css'
 
 export default function Slideshow({ images }) {
     const [imageIndex, setImageIndex] = useState(0)
-    const imageIndexRef = useRef(imageIndex)
     const [startX, setStartX] = useState(0)
     const [endX, setEndX] = useState(0)
     const [disableAutoplay, setDisableAutoplay] = useState(false)
+    const intervalRef = useRef(null)
     
     const swipeThreshold = 50
     const autoplayTimeout = 5000
 
     function showNextImage() {
-        if (!disableAutoplay)
-            setImageIndex(index => (index === images.length - 1 ? 0 : index + 1))
+        setImageIndex(index => (index === images.length - 1 ? 0 : index + 1))
     }
 
     function showPrevImage() {
-        if (!disableAutoplay)
-            setImageIndex(index => (index === 0 ? images.length - 1 : index - 1))
+        setImageIndex(index => (index === 0 ? images.length - 1 : index - 1))
     }
 
     function handleLeftButtonClick() {
         setDisableAutoplay(true)
-
+        showPrevImage()
         setTimeout(() => {
             setDisableAutoplay(false)
-        }, autoplayTimeout)
-
-        showPrevImage()
+        }, 0)
     }
 
     function handleRightButtonClick() {
         setDisableAutoplay(true)
-
+        showNextImage()
         setTimeout(() => {
             setDisableAutoplay(false)
-        }, autoplayTimeout)
-
-        showNextImage()
+        }, 0)
     }
 
     function handleTouchStart(e) {
+        setDisableAutoplay(true)
         setStartX(e.touches[0].clientX)
     }
 
@@ -54,21 +49,27 @@ export default function Slideshow({ images }) {
         const deltaX = startX - endX
 
         if (deltaX > swipeThreshold){
-            handleRightButtonClick()
+            showNextImage()
         } else if (deltaX < -swipeThreshold) {
-            handleLeftButtonClick()
+            showPrevImage()
         }
-    }
+
+        setTimeout(() => {
+            setDisableAutoplay(false)
+        }, 0)    }
 
     useEffect(() => {
-        imageIndexRef.current = imageIndex
-        
-        const intervalID = setInterval(() => {
-            showNextImage()
-        }, 5000)
+        if (!disableAutoplay) {            
+            intervalRef.current = setInterval(() => {
+                showNextImage()
+            }, 5000)
+        } else {
+            clearInterval(intervalRef.current)
+        }
 
-        return () => clearInterval(intervalID)
+        return () => clearInterval(intervalRef.current)
     }, [disableAutoplay])
+    
 
     return (
         <section
