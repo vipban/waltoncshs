@@ -50,7 +50,7 @@ export default function SignUps() {
 
                 setEventArray(sortedEvents)
                 // console.log(events)
-                console.log(sortedEvents)
+                // console.log(sortedEvents)
             } catch (error) {
                 console.error('Error getting documents: ', error)
             }
@@ -69,12 +69,12 @@ export default function SignUps() {
 
                     const actualDescription = event.description.slice(0, slotsIndex)
                     const slots = event.description.slice(slotsIndex + 7, length)
-                    // console.log(slots)
+                    // console.log(`${event.name} (${event.startTime}-${event.endTime})`)
                     
                     return (
                         <SignUp
                             key={index}
-                            name={event.name}
+                            name={`${event.name} (${event.startTime}-${event.endTime})`}
                             description={actualDescription}
                             location={event.location}
                             startTime={event.startTime}
