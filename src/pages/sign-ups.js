@@ -3,9 +3,8 @@ import SignUp from '../components/sign-up'
 import './stylesheets/sign-ups.css'
 
 // Firestore Imports
-import { app, db } from '../firebase-config'
+import { db } from '../firebase-config'
 import { collection , getDocs } from 'firebase/firestore'
-import { Underline } from 'lucide-react'
 
 export default function SignUps() {
     const [eventArray, setEventArray] = useState([])

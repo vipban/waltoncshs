@@ -1,25 +1,42 @@
-import car1 from '../resources/blue-maserati.jpg'
-import car2 from '../resources/McLaren-720S.jpg'
-import car3 from '../resources/Audi-R8.jpg'
+// React Imports
+import React, { useState, useEffect } from 'react'
 
+// Component Imports
 import Slideshow from '../components/slideshow'
 import CalendarComponent from '../components/calendar'
 import './stylesheets/home.css'
 
-function Home() {
-    // REPLACE WITH ACTUAL IMAGES
-    const images = [
-        { url: car1, alt: 'Car One' },
-        { url: car2, alt: 'Car Two' },
-        { url: car3, alt: 'Car Three'}
-    ]
+// Firestore Imports
+import { db } from '../firebase-config'
+import { collection , getDocs } from 'firebase/firestore'
 
+function Home() {
+    const [photoArray, setPhotoArray] = useState([])
+
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const querySnapshot = await getDocs(collection(db, 'slideshow-photos'))
+                const photos = querySnapshot.docs.map(doc => ({
+                    url: doc.data().url, 
+                    alt: doc.data().alt
+                }))
+
+                setPhotoArray(photos)
+                // console.log(photos)
+            } catch (error) {
+                console.error('Error getting documents: ', error)
+            }
+        }
+
+        fetchData()
+    }, [])
 
     return (
         <>
             <section className='photos-slideshow'>
                 <h1>Recent Photos</h1>
-                <Slideshow images={images} />
+                <Slideshow images={photoArray} />
             </section>
             <hr />
             <section className='calendar'>
