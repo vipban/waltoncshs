@@ -1,0 +1,51 @@
+/* Password Form Styling */
+.officer-password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem 2rem 0;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.officer-input {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.officer-submit {
+    margin: 0 40%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+
+    background-color: lightskyblue;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* End Password Form Styling */
+
+/* Officer Dashboard Styling */
+.officer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 35%;
+}
+
+.officer-buttons button {
+    padding: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background: rgb(245,245,245);
+    background: radial-gradient(circle, #f1f1f1 50%, #dbdbdb 100%);
+    font-size: 2rem;
+}
+
+.officer-buttons button:hover {
+    cursor: pointer;
+}
+/* End Officer Dashboard Styling */

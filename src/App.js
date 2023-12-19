@@ -8,6 +8,7 @@ import Footer from './components/footer'
 import Home from './pages/home'
 import UpcomingEvents from './pages/upcoming-events'
 import SignUps from './pages/sign-ups'
+import OfficerDashboard from './pages/officer-dashboard'
 
 // React Router
 import { Route, Routes } from 'react-router-dom'
@@ -21,6 +22,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/upcoming-events' element={<UpcomingEvents />} />
           <Route path='/sign-ups' element={<SignUps />} />
+          <Route path='/officers' element={<OfficerDashboard />} />
         </Routes>
       </div>
       <Footer />

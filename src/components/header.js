@@ -9,6 +9,7 @@ export default function Header() {
                 <CustomLink to='/'>Home</CustomLink>
                 <CustomLink to='upcoming-events'>Upcoming Events</CustomLink>
                 <CustomLink to='sign-ups'>Sign-Ups</CustomLink>
+                <CustomLink to='officers'>Officers</CustomLink>
             </ul>
         </nav>
     )
