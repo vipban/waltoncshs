@@ -3,7 +3,7 @@ import RegistrationForm from './event-registration-form'
 import { MapPin, CalendarClock, Users } from 'lucide-react'
 
 // Firestore Imports
-import { app, db } from '../firebase-config'
+import { db } from '../firebase-config'
 import { doc , getDoc } from 'firebase/firestore'
 
 export default function SignUp(props) {

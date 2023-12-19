@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 
 // Component Imports
 import Header from './components/header'
