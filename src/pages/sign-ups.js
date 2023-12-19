@@ -21,10 +21,10 @@ export default function SignUps() {
                 const querySnapshot = await getDocs(collection(db, 'events'))
                 const events = querySnapshot.docs.map(doc => {
                     let endTime = doc.data().endTime
-                    let endDate = new Date(endTime.slice(0, endTime.indexOf(currentYear) + 4))
+                    let endDate = new Date(endTime.slice(0, endTime.indexOf(':') - 3))
                     let currentDate = new Date(currentDateString)
 
-                    console.log(endDate + ' vs ' + currentDate)
+                    // console.log(endDate + ' vs ' + currentDate)
 
                     if (endDate > currentDate) {
                         return ({
@@ -37,9 +37,21 @@ export default function SignUps() {
                         })
                     }
                 })
-                setEventArray(events.filter(event => event !== undefined))
-                console.log(events)
-                console.log(events.filter(event => event !== undefined))
+
+                let sortedEvents = events.filter(event => event !== undefined)
+                sortedEvents.sort((a, b) => {
+                    let aDate = new Date(a.startTime.slice(0, a.startTime.indexOf(':') - 3))
+                    let bDate = new Date(b.startTime.slice(0, a.startTime.indexOf(':') - 3))
+                    // console.log(aDate + ' vs. ' + bDate)
+                    
+                    return (
+                        new Date(aDate) - new Date(bDate)
+                    )
+                })
+
+                setEventArray(sortedEvents)
+                // console.log(events)
+                console.log(sortedEvents)
             } catch (error) {
                 console.error('Error getting documents: ', error)
             }
@@ -58,7 +70,7 @@ export default function SignUps() {
 
                     const actualDescription = event.description.slice(0, slotsIndex)
                     const slots = event.description.slice(slotsIndex + 7, length)
-                    console.log(slots)
+                    // console.log(slots)
                     
                     return (
                         <SignUp

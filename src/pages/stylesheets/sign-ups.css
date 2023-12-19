@@ -30,6 +30,11 @@
     font-size: 1.5rem;
 }
 
+.times {
+    color: #04aafd;
+    font-weight: bold;
+}
+
 .event button {
     margin-top: 1rem;
     padding: 1rem 2rem;
