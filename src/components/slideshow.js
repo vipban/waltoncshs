@@ -68,7 +68,7 @@ export default function Slideshow({ images }) {
         }
 
         return () => clearInterval(intervalRef.current)
-    }, [disableAutoplay])
+    }, [disableAutoplay, imageIndex, images.length])
     
 
     return (
