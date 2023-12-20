@@ -74,6 +74,7 @@ export default function SignUps() {
                     return (
                         <SignUp
                             key={index}
+                            event={event}
                             name={`${event.name} (${event.startTime}-${event.endTime})`}
                             description={actualDescription}
                             location={event.location}
