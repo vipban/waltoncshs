@@ -11,6 +11,7 @@
     display: block;
     margin: 1rem 5%;
     padding: 3rem;
+    height: fit-content;
     background-color: white;
     border-radius: 2rem;
     z-index: 1;
@@ -45,12 +46,11 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    flex-wrap: wrap;
     margin-bottom: .5rem;
 }
 
 .event-modal h3 {
-    gap: 7rem;
+    justify-content: space-between;
 }
 
 .event-modal-top h3 {

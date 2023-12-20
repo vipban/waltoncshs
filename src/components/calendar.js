@@ -62,13 +62,16 @@ export default function CalendarComponent() {
         if (id !== prevId) {
             info.jsEvent.preventDefault()
 
-            let { clientX, clientY } = info.jsEvent
+            const eventElement = info.el
+            const rect = eventElement.getBoundingClientRect()
+            let top = rect.bottom + window.scrollY - 175
+            let left = rect.left + window.scrollX
 
             setModalState({
                 isOpen: true,
                 event: { ...info.event.toPlainObject(), description: info.event.extendedProps.description },
-                top: clientY,
-                left: clientX
+                top: top,
+                left: left
             })
 
            setPrevId(id)
