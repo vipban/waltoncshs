@@ -61,7 +61,7 @@ export default function SignUp(props) {
 
                 {registeredPeople.length > 0 ? (
                     <div className='registered-people'>
-                        <h2 style={{textAlign: 'right'}}>People Registered</h2>
+                        <h2>People Registered</h2>
                         <div className='registered-people-list'>
                             {registeredPeople.map((person, index) => (
                                 <p key={index}>{person}</p>

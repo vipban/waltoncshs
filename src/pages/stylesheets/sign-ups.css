@@ -92,6 +92,10 @@
     font-weight: bold;
 }
 
+.registered-people {
+    min-width: 210px;
+}
+
 .registered-people-list {
     max-height: 10.5rem;
     overflow: auto;
@@ -104,10 +108,31 @@
 }
 
 .registered-people p {
-    text-align: right;
     margin-right: 1rem;
 }
 
 .footer {
     margin-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .registered-people h2,
+    .registered-people p {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .event-grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .registered-people {
+        text-align: left;
+    }
+
+    .registered-people h2 {
+        margin-top: 0;
+    }
 }
