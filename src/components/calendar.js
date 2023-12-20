@@ -100,6 +100,7 @@ export default function CalendarComponent() {
                     eventClick={handleEventClick}
                     eventMouseEnter={handleEventHover}
                     eventMouseLeave={handleEventHover}
+                    aspectRatio='2.5'
                 />
             </div>
             <div className='listView'>
