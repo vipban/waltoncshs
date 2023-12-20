@@ -57,7 +57,7 @@ body {
     border-radius: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (orientation: portrait) {
     .desktop-nav {
         display: none;
     }
