@@ -10,11 +10,13 @@
 .fc {
     display: block;
     margin: 1rem 5%;
-    padding: 3rem;
+    padding: 1.5rem;
     height: fit-content;
     background-color: white;
     border-radius: 2rem;
     z-index: 1;
+
+    font-size: 16px;
 
     --fc-border-color: black;
 }
@@ -64,5 +66,9 @@
 
     .listView {
         display: none;
+    }
+
+    .fc {
+        padding: 3rem;
     }
 }
