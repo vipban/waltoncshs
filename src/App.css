@@ -20,3 +20,9 @@ Footer {
     bottom: 0;
     z-index: 2;
 }
+
+@media only screen and (orientation: portrait) {
+    html {
+        font-size: 24px;
+    }
+}

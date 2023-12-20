@@ -1,13 +1,43 @@
-.cshs-calendar {
-    border: none;
-    scroll-behavior: none;
-    padding: 0 5%;
-    width: 100%;
-    height: 660px;
+.dayGrid {
+    display: none;
 }
 
-@media only screen and (orientation: portrait) {
-    .cshs-calendar {
-        height: 300px;
+.listView {
+    display: block;
+}
+
+.fc {
+    display: block;
+    margin: 1rem 5%;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 2rem;
+
+    --fc-border-color: black;
+}
+
+.fc-icon-chevron-left::before {
+    content: '\276E';
+}
+
+.fc-icon-chevron-right::before {
+    content: '\276F'
+}
+
+.event-modal-top h3 {
+    display: inline;
+}
+
+.event-modal-top X {
+    vertical-align: bottom;
+}
+
+@media only screen and (orientation: landscape) {
+    .dayGrid {
+        display: block;
+    }
+
+    .listView {
+        display: none;
     }
 }
