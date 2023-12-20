@@ -23,10 +23,19 @@ export default function SignUp(props) {
 
                 if (docSnap.exists()) {
                     const originalPeople = docSnap.data().registeredPeople
-                    const formattedPeople = originalPeople.map(person => {
-                        return person.firstName + ' ' + person.lastName
-                    })
+                    let formattedPeople = ''
+                    if (props.officer) {       // officers
+                        formattedPeople = originalPeople.map(person => {
+                            let phone = person.phone
+                            phone = `(${phone.slice(0, 3)}) ${phone.slice(3, 6)}-${phone.slice(6, phone.length)}`
 
+                            return person.firstName + ' ' + person.lastName + ', ' + person.email + ', ' + phone
+                        })
+                    } else {        // non-officers
+                        formattedPeople = originalPeople.map(person => {
+                            return person.firstName + ' ' + person.lastName
+                        })
+                    }
                     setRegisteredPeople(formattedPeople)
                 } else {
                     console.log('No such document!')
@@ -52,7 +61,7 @@ export default function SignUp(props) {
 
                 {registeredPeople.length > 0 ? (
                     <div className='registered-people'>
-                        <h2>People Registered</h2>
+                        <h2 style={{textAlign: 'right'}}>People Registered</h2>
                         <div className='registered-people-list'>
                             {registeredPeople.map((person, index) => (
                                 <p key={index}>{person}</p>

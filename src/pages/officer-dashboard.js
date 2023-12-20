@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import SignUps from './sign-ups'
 import './stylesheets/officer-dashboard.css'
 
 export default function OfficerDashboard() {
@@ -45,7 +46,7 @@ export default function OfficerDashboard() {
 
                 {displaySignUps ?
                     <section className='officer-sign-ups'>
-
+                        <SignUps officer={true}/>
                     </section>
                 :
                     <></>

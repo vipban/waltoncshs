@@ -6,7 +6,7 @@ import './stylesheets/sign-ups.css'
 import { db } from '../firebase-config'
 import { collection , getDocs } from 'firebase/firestore'
 
-export default function SignUps() {
+export default function SignUps(props) {
     const [eventArray, setEventArray] = useState([])
 
     useEffect(() => {
@@ -81,6 +81,7 @@ export default function SignUps() {
                             startTime={event.startTime}
                             endTime={event.endTime}
                             slots={slots}
+                            officer={props.officer}
                         />
                     )
                 })}
