@@ -1,3 +1,5 @@
-.upcoming-events {
-    margin-bottom: 5vh;
+@media only screen and (orientation: landscape) {
+    .upcoming-events {
+        margin-bottom: 5vh;
+    }    
 }
