@@ -1,4 +1,5 @@
 .dayGrid {
+    position: relative;
     display: none;
 }
 
@@ -12,6 +13,7 @@
     padding: 3rem;
     background-color: white;
     border-radius: 2rem;
+    z-index: 1;
 
     --fc-border-color: black;
 }
@@ -24,12 +26,35 @@
     content: '\276F'
 }
 
-.event-modal-top h3 {
-    display: inline;
+.event-modal {
+    display: none;
+    background-color: lightskyblue;
+    border: .125rem solid black;
+    border-radius: 1rem;
+    padding: .125rem .5rem;
+    z-index: 1000;
+    max-width: 22rem;
 }
 
-.event-modal-top X {
-    vertical-align: bottom;
+.event-modal.show {
+    position: absolute;
+    display: block;
+}
+
+.flex {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: .5rem;
+}
+
+.event-modal h3 {
+    gap: 7rem;
+}
+
+.event-modal-top h3 {
+    display: inline;
 }
 
 @media only screen and (orientation: landscape) {
