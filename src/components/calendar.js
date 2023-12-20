@@ -64,8 +64,10 @@ export default function CalendarComponent() {
 
             const eventElement = info.el
             const rect = eventElement.getBoundingClientRect()
-            let top = rect.bottom + window.scrollY - 175
+            let top = rect.bottom + window.scrollY
             let left = rect.left + window.scrollX
+
+            window.location.pathname.endsWith('/upcoming-events') ? top -= 175 : top -= 1385
 
             setModalState({
                 isOpen: true,
