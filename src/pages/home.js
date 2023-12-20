@@ -23,7 +23,7 @@ function Home() {
                 }))
 
                 setPhotoArray(photos)
-                // console.log(photos)
+                console.log(photos)
             } catch (error) {
                 console.error('Error getting documents: ', error)
             }

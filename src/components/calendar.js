@@ -1,4 +1,3 @@
-import React from 'react'
 import './stylesheets/calendar.css'
 
 export default function CalendarComponent() {

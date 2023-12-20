@@ -10,7 +10,7 @@ export default function Header() {
         <nav className='nav'>
             <Link to='/' className='site-title'>Walton CSHS</Link>
             <div className='mobile-nav'>
-                <label class='hamburger-menu'>
+                <label className='hamburger-menu'>
                     <input type='checkbox' name='' id='hamburger-toggle' />
                 </label>
                 <aside className='sidebar'>
