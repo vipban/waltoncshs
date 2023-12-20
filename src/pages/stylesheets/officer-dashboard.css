@@ -28,7 +28,7 @@
 }
 /* End Password Form Styling */
 
-/* Officer Dashboard Styling */
+/* General Officer Dashboard Styling */
 .officer-buttons {
     display: flex;
     flex-direction: column;
@@ -48,4 +48,38 @@
 .officer-buttons button:hover {
     cursor: pointer;
 }
-/* End Officer Dashboard Styling */
+/* End General Officer Dashboard Styling */
+
+/* Sign-Up Details Styling */
+/* End Sign-Up Details Styling */
+
+/* Important Links Styling */
+.officer-links {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.officer-links a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline wavy;
+}
+/* End Important Links Styling */
+
+/* Website Information Styling */
+.website-info {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.website-info-block {
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: none;
+}
+/* End Website Information Styling */
