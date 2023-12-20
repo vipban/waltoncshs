@@ -30,22 +30,22 @@ export default function RegistrationForm(props) {
     return (
         <form className='registration-form' onSubmit={handleSubmit}>
                 <div className='input-container'>
-                    <label for='fname'>First Name</label>
+                    <label htmlFor='fname'>First Name</label>
                     <input id='fname' type='text' name='fname' required/>
                 </div>
 
                 <div className='input-container'>
-                    <label for='lname'>Last Name</label>
+                    <label htmlFor='lname'>Last Name</label>
                     <input id='lname' type='text' name='lname' required/>
                 </div>
 
                 <div className='input-container'>
-                    <label for='email'>Email</label>
+                    <label htmlFor='email'>Email</label>
                     <input id='email' type='email' name='email' required/>
                 </div>
 
                 <div className='input-container'>
-                    <label for='phone'>Phone Number</label>
+                    <label htmlFor='phone'>Phone Number</label>
                     <input id='phone' type='tel' name='phone'/>
                 </div>
 

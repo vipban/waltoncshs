@@ -31,7 +31,7 @@ export default function SignUp(props) {
 
                             return person.firstName + ' ' + person.lastName + ', ' + person.email + ', ' + phone
                         })
-                    } else {        // non-officers
+                    } else if (originalPeople !== undefined) {        // non-officers
                         formattedPeople = originalPeople.map(person => {
                             return person.firstName + ' ' + person.lastName
                         })
@@ -77,7 +77,7 @@ export default function SignUp(props) {
                     </div>
                 )}
             </div>
-            {props.slots > registeredPeople.length && <button onClick={handleClick}>{isFormVisible ? 'Hide Sign Up Form' : 'Show Sign Up Form'}</button>}
+            {props.slots > registeredPeople.length && !props.officer && <button onClick={handleClick}>{isFormVisible ? 'Hide Sign Up Form' : 'Show Sign Up Form'}</button>}
             {isFormVisible && <RegistrationForm name={props.name}/>}
         </section>
     )
