@@ -115,14 +115,14 @@
     margin-top: 2rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) {
     .registered-people h2,
     .registered-people p {
         text-align: right;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (orientation: portrait) {
     .event-grid {
         flex-direction: column;
         gap: 2rem;

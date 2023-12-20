@@ -85,7 +85,7 @@
 }
 /* End Website Information Styling */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (orientation: portrait) {
     .officer-buttons {
         width: auto;
         margin: 0 10%;

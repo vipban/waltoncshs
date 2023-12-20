@@ -6,7 +6,7 @@
     height: 660px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (orientation: portrait) {
     .cshs-calendar {
         height: 300px;
     }
