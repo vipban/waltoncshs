@@ -43,10 +43,8 @@ export default function CalendarComponent() {
             // Description Formatting
             let formattedDescription = event.description.slice(0, event.description.indexOf('Slots:'))
         
-            console.log(top, left)
-
             return (
-                <div className={modalClassName} style={{ top: `${top}px`, left: `${left}px` }}>
+                <div className={modalClassName} id='cal-modal' style={{ top: `${top}px`, left: `${left}px` }}>
                     <h3 className='flex'>{event.title} <X onClick={onClose} style={{cursor: 'pointer'}}/></h3>
                     <p className='flex'>{ formattedDescription || 'No description'}</p>
                     {event.allDay ? <p className='flex'><CalendarClock /> {startDate} - {endDate}</p> : <p><Clock /> {startDate} ({startTime} - {endTime})</p>}
@@ -66,12 +64,14 @@ export default function CalendarComponent() {
         if (id !== prevId) {
             info.jsEvent.preventDefault()
 
-            const eventElement = info.el
-            const rect = eventElement.getBoundingClientRect()
-            let top = rect.bottom + window.scrollY
-            let left = rect.left + window.scrollX
+            // Modal Positioning
+            const eventElementRef = info.el
+            const eventElementRect = eventElementRef.getBoundingClientRect()
+            
+            let top = eventElementRect.bottom + 64
+            let left = eventElementRect.left
 
-            window.location.pathname.endsWith('/upcoming-events') ? top -= 175 : top -= 1385
+            console.log('Top: ' + top + ', Left: ' + left)
 
             setModalState({
                 isOpen: true,

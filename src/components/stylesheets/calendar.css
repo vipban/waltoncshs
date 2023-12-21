@@ -28,7 +28,7 @@
 }
 
 .event-modal {
-    display: none;
+    display: hidden;
     background-color: lightskyblue;
     border: .125rem solid black;
     border-radius: 1rem;
