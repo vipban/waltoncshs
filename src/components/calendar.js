@@ -96,7 +96,7 @@ export default function CalendarComponent() {
                     plugins={[dayGridPlugin, googleCalendarPlugin]}
                     initialView='dayGridMonth'
                     googleCalendarApiKey='AIzaSyD_a8nxB1B6ns3qCU5X5RRp-A2u-Gf34qQ'
-                    events={{ googleCalendarId: 'dcfcdb0b49805229221411d49688fa71211e21ae00f56ba13d58153b6e554d13@group.calendar.google.com' }}
+                    events={{ googleCalendarId: 'waltoncshs@gmail.com' }}     //d2FsdG9uY3Noc0BnbWFpbC5jb20
                     eventClick={handleEventClick}
                     eventMouseEnter={handleEventHover}
                     eventMouseLeave={handleEventHover}
@@ -108,7 +108,7 @@ export default function CalendarComponent() {
                     plugins={[listPlugin, googleCalendarPlugin]}
                     initialView='listMonth'
                     googleCalendarApiKey='AIzaSyD_a8nxB1B6ns3qCU5X5RRp-A2u-Gf34qQ'
-                    events={{ googleCalendarId: 'dcfcdb0b49805229221411d49688fa71211e21ae00f56ba13d58153b6e554d13@group.calendar.google.com' }}
+                    events={{ googleCalendarId: 'waltoncshs@gmail.com' }}
                 />
             </div>
         </>
