@@ -41,7 +41,7 @@ function Home() {
         }
         const photos = importAll(require.context('../resources', false, /\.(png|jpe?g|svg)$/))
         setPhotoArray(photos)
-    })
+    }, [])
 
     return (
         <>
