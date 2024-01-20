@@ -34,13 +34,13 @@ function Home() {
 
     useEffect(() => {
         const importAll = r => {
-            return r.keys().map( filename => ({
+            return r.keys().map( fileName => ({
                 url: r(fileName).default,
                 alt: fileName.replace('./', '').replace(/\.[^/.]+$/, '')
             }))
         }
         const photos = importAll(require.context('../resources', false, /\.(png|jpe?g|svg)$/))
-        setPhotoArray(images)
+        setPhotoArray(photos)
     })
 
     return (
