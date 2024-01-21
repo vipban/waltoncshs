@@ -34,11 +34,11 @@ function Home() {
 
     useEffect(() => {
         const images = [
-            { url: './resources/Seminar - Image 1.jpg', alt: 'Seminar Image 1.jpg'},
-            { url: './resources/Seminar - Image 2.jpg', alt: 'Seminar Image 2.jpg'},
-            { url: './resources/Seminar - Image 3.jpg', alt: 'Seminar Image 3.jpg'},
-            { url: './resources/Speaker - Image 1.jpg', alt: 'Speaker Image 1.jpg'},
-            { url: './resources/Speaker - Image 2.jpg', alt: 'Speaker Image 2.jpg'},
+            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Seminar - Image 1.jpg', alt: 'Seminar Image 1.jpg'},
+            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Seminar - Image 2.jpg', alt: 'Seminar Image 2.jpg'},
+            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Seminar - Image 3.jpg', alt: 'Seminar Image 3.jpg'},
+            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Speaker - Image 1.JPG', alt: 'Speaker Image 1.jpg'},
+            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Speaker - Image 2.JPG', alt: 'Speaker Image 2.jpg'},
         ]
 
         setPhotoArray(images)
