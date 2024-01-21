@@ -19,7 +19,7 @@ import photo5 from '../resources/Speaker - Image 2.JPG'
 
 
 function Home() {
-    const [photoArray, setPhotoArray] = useState([])
+    // const [photoArray, setPhotoArray] = useState([])
 
     // useEffect(() => {
     //     async function fetchData() {
@@ -39,6 +39,14 @@ function Home() {
 
     //     fetchData()
     // }, [])
+
+    const photoArray = [
+        { url: photo1, alt: 'Seminar Image 1' },
+        { url: photo2, alt: 'Seminar Image 2' },
+        { url: photo3, alt: 'Seminar Image 3' },
+        { url: photo4, alt: 'Speaker Image 1' },
+        { url: photo5, alt: 'Speaker Image 2' },
+    ]
 
     return (
         <>
