@@ -63,9 +63,9 @@ export default function OfficerDashboard() {
 
                 {displayWebsiteInfo ?
                     <section className='website-info'>
-                        <div className='website-info-block'>
+                        {/* <div className='website-info-block'>
                             <h3>Google Drive</h3>
-                            <a href='https://drive.google.com' target='_blank'>Walton CSHS Google Drive</a>     {/* CHANGE TO ACTUAL GOOGLE DRIVE */}
+                            <a href='https://drive.google.com' target='_blank'>Walton CSHS Google Drive</a>      // CHANGE TO ACTUAL GOOGLE DRIVE 
                             <p>
                                 The only part of the Walton CSHS Google Drive that is attached to the website
                                 is the photos for the slideshow on the homepage.
@@ -74,7 +74,7 @@ export default function OfficerDashboard() {
                                 but deleted photos will not be removed (requires Zapier premium), so you must use
                                 Firebase/Firestore to remove unwanted images from the slideshow.
                             </p>
-                        </div>
+                        </div> */}
 
                         <div className='website-info-block'>
                             <h3>Google Calendar Rules</h3>
@@ -100,13 +100,13 @@ export default function OfficerDashboard() {
                             <h3>Firebase/Firestore (Database)</h3>
                             <a href='https://console.firebase.google.com/project/walton-cshs-1/firestore/' target='_blank'>Firestore Console</a>
                             <p>
-                                Firestore is the backbone of this website. It stores all of the member sign-ups, the slideshow photos, stores deleted events as a safeguard, and more.
-                                Most of the time, you will not need to interact with Firestore as it is mostly self-sufficient, but there are two times when you will have to.
-                                One, as mentioned previously, is deleting unwanted photos from the picture slideshow on the homepage.
-                                The second, and likely the most used, will be removing a member's sign up from an event.
+                                Firestore is the backbone of this website. It stores all of the member sign-ups, the slideshow photos,
+                                stores deleted events as a safeguard, and more. Most of the time, you will not need to interact with
+                                Firestore as it is mostly self-sufficient, but there is one time when you will have to, removing a
+                                member's sign up from an event.
                             </p>
                             <div className='firestore-instructions'>
-                                <div>
+                                {/* <div>
                                     <b>To remove a slideshow picture:</b>
                                     <ol>
                                         <li>Click on the above link to open the Firestore console</li>
@@ -116,8 +116,8 @@ export default function OfficerDashboard() {
                                         <li>Click 'delete document'.</li>
                                         <li>Click 'Start delete'.</li>
                                     </ol>
-                                </div>
-
+                                </div> */}
+                                
                                 <div>
                                     <b>To remove an event sign-up:</b>
                                     <ol>
