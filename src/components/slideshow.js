@@ -91,7 +91,7 @@ export default function Slideshow({ images }) {
                 {images.map(({ url, alt }, index) => (
                     <img
                         key={url}
-                        src={require(url)}
+                        src={url}
                         alt={alt}
                         aria-hidden={imageIndex !== index}
                         className='img-slider-img'
