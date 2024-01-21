@@ -14,8 +14,8 @@ import { collection , getDocs } from 'firebase/firestore'
 import photo1 from '../resources/Seminar - Image 1.jpg'
 import photo2 from '../resources/Seminar - Image 2.jpg'
 import photo3 from '../resources/Seminar - Image 3.jpg'
-import photo4 from '../resources/Speaker - Image 1.jpg'
-import photo5 from '../resources/Speaker - Image 2.jpg'
+import photo4 from '../resources/Speaker - Image 1.JPG'
+import photo5 from '../resources/Speaker - Image 2.JPG'
 
 
 function Home() {
