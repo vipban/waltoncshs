@@ -40,18 +40,6 @@ function Home() {
     //     fetchData()
     // }, [])
 
-    useEffect(() => {
-        const images = [
-            { url: {photo1}, alt: 'Seminar Image 1.jpg'},
-            { url: {photo2}, alt: 'Seminar Image 2.jpg'},
-            { url: {photo3}, alt: 'Seminar Image 3.jpg'},
-            { url: {photo4}, alt: 'Speaker Image 1.jpg'},
-            { url: {photo5}, alt: 'Speaker Image 2.jpg'},
-        ]
-
-        setPhotoArray(images)
-    }, [])
-
     return (
         <>
             <section className='photos-slideshow'>

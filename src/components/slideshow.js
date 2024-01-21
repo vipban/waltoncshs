@@ -2,7 +2,14 @@ import React, { useState, useEffect, useRef } from 'react'
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from 'lucide-react'
 import './stylesheets/slideshow.css'
 
-export default function Slideshow({ images }) {
+// Photos
+import photo1 from '../resources/Seminar - Image 1.jpg'
+import photo2 from '../resources/Seminar - Image 2.jpg'
+import photo3 from '../resources/Seminar - Image 3.jpg'
+import photo4 from '../resources/Speaker - Image 1.JPG'
+import photo5 from '../resources/Speaker - Image 2.JPG'
+
+export default function Slideshow() {
     const [imageIndex, setImageIndex] = useState(0)
     const [startX, setStartX] = useState(0)
     const [endX, setEndX] = useState(0)
@@ -69,6 +76,14 @@ export default function Slideshow({ images }) {
 
         return () => clearInterval(intervalRef.current)
     }, [disableAutoplay, imageIndex, images.length])
+
+    const images = [
+        { url: {photo1}, alt: 'Seminar Image 1'},
+        { url: {photo2}, alt: 'Seminar Image 2'},
+        { url: {photo3}, alt: 'Seminar Image 3'},
+        { url: {photo4}, alt: 'Speaker Image 1'},
+        { url: {photo5}, alt: 'Speaker Image 2'},
+    ]
     
 
     return (
