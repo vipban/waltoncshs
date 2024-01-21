@@ -19,6 +19,14 @@ export default function Slideshow() {
     const swipeThreshold = 50
     const autoplayTimeout = 5000
 
+    const images = [
+        { url: {photo1}, alt: 'Seminar Image 1'},
+        { url: {photo2}, alt: 'Seminar Image 2'},
+        { url: {photo3}, alt: 'Seminar Image 3'},
+        { url: {photo4}, alt: 'Speaker Image 1'},
+        { url: {photo5}, alt: 'Speaker Image 2'},
+    ]
+
     function showNextImage() {
         setImageIndex(index => (index === images.length - 1 ? 0 : index + 1))
     }
@@ -76,14 +84,6 @@ export default function Slideshow() {
 
         return () => clearInterval(intervalRef.current)
     }, [disableAutoplay, imageIndex, images.length])
-
-    const images = [
-        { url: {photo1}, alt: 'Seminar Image 1'},
-        { url: {photo2}, alt: 'Seminar Image 2'},
-        { url: {photo3}, alt: 'Seminar Image 3'},
-        { url: {photo4}, alt: 'Speaker Image 1'},
-        { url: {photo5}, alt: 'Speaker Image 2'},
-    ]
     
 
     return (
