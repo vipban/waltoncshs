@@ -10,6 +10,14 @@ import './stylesheets/home.css'
 import { db } from '../firebase-config'
 import { collection , getDocs } from 'firebase/firestore'
 
+// Photos
+import photo1 from '../resources/Seminar - Image 1.jpg'
+import photo2 from '../resources/Seminar - Image 2.jpg'
+import photo3 from '../resources/Seminar - Image 3.jpg'
+import photo4 from '../resources/Speaker - Image 1.jpg'
+import photo5 from '../resources/Speaker - Image 2.jpg'
+
+
 function Home() {
     const [photoArray, setPhotoArray] = useState([])
 
@@ -34,11 +42,11 @@ function Home() {
 
     useEffect(() => {
         const images = [
-            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Seminar - Image 1.jpg', alt: 'Seminar Image 1.jpg'},
-            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Seminar - Image 2.jpg', alt: 'Seminar Image 2.jpg'},
-            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Seminar - Image 3.jpg', alt: 'Seminar Image 3.jpg'},
-            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Speaker - Image 1.JPG', alt: 'Speaker Image 1.jpg'},
-            { url: '/Users/VipulBansal/Library/CloudStorage/OneDrive-CobbCountySchoolDistrict/Coding/CSHS Website/src/resources/Speaker - Image 2.JPG', alt: 'Speaker Image 2.jpg'},
+            { url: {photo1}, alt: 'Seminar Image 1.jpg'},
+            { url: {photo2}, alt: 'Seminar Image 2.jpg'},
+            { url: {photo3}, alt: 'Seminar Image 3.jpg'},
+            { url: {photo4}, alt: 'Speaker Image 1.jpg'},
+            { url: {photo5}, alt: 'Speaker Image 2.jpg'},
         ]
 
         setPhotoArray(images)
