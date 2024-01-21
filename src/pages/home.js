@@ -13,23 +13,35 @@ import { collection , getDocs } from 'firebase/firestore'
 function Home() {
     const [photoArray, setPhotoArray] = useState([])
 
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         try {
+    //             const querySnapshot = await getDocs(collection(db, 'slideshow-photos'))
+    //             const photos = querySnapshot.docs.map(doc => ({
+    //                 url: doc.data().url, 
+    //                 alt: doc.data().alt
+    //             }))
+
+    //             setPhotoArray(photos)
+    //             console.log(photos)
+    //         } catch (error) {
+    //             console.error('Error getting documents: ', error)
+    //         }
+    //     }
+
+    //     fetchData()
+    // }, [])
+
     useEffect(() => {
-        async function fetchData() {
-            try {
-                const querySnapshot = await getDocs(collection(db, 'slideshow-photos'))
-                const photos = querySnapshot.docs.map(doc => ({
-                    url: doc.data().url, 
-                    alt: doc.data().alt
-                }))
+        const images = [
+            { url: 'src/resources/Seminar - Image 1.jpg', alt: 'Seminar Image 1.jpg'},
+            { url: 'src/resources/Seminar - Image 2.jpg', alt: 'Seminar Image 2.jpg'},
+            { url: 'src/resources/Seminar - Image 3.jpg', alt: 'Seminar Image 3.jpg'},
+            { url: 'src/resources/Speaker - Image 1.jpg', alt: 'Speaker Image 1.jpg'},
+            { url: 'src/resources/Speaker - Image 2.jpg', alt: 'Speaker Image 2.jpg'},
+        ]
 
-                setPhotoArray(photos)
-                console.log(photos)
-            } catch (error) {
-                console.error('Error getting documents: ', error)
-            }
-        }
-
-        fetchData()
+        setPhotoArray(images)
     }, [])
 
     return (
