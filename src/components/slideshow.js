@@ -88,7 +88,7 @@ export default function Slideshow({ images }) {
                     overflow: 'hidden'
                 }}
             >
-                {/* {images.map(({ url, alt }, index) => (
+                {images.map(({ url, alt }, index) => (
                     <img
                         key={url}
                         src={url}
@@ -97,37 +97,7 @@ export default function Slideshow({ images }) {
                         className='img-slider-img'
                         style={{translate: `${-100 * imageIndex}%`}}
                     />
-                ))} */}
-                <img src='src/resources/Seminar - Image 1.jpg'
-                     alt='Seminar - Image 1'
-                     aria-hidden={imageIndex !== index}
-                     className='img-slider-img'
-                     style={{translate: `${-100 * imageIndex}%`}}
-                />
-                <img src='src/resources/Seminar - Image 2.jpg'
-                     alt='Seminar - Image 2'
-                     aria-hidden={imageIndex !== index}
-                     className='img-slider-img'
-                     style={{translate: `${-100 * imageIndex}%`}}
-                />
-                <img src='src/resources/Seminar - Image 3.jpg'
-                     alt='Seminar - Image 3'
-                     aria-hidden={imageIndex !== index}
-                     className='img-slider-img'
-                     style={{translate: `${-100 * imageIndex}%`}}
-                />
-                <img src='src/resources/Speaker - Image 1.jpg'
-                     alt='Speaker - Image 1'
-                     aria-hidden={imageIndex !== index}
-                     className='img-slider-img'
-                     style={{translate: `${-100 * imageIndex}%`}}
-                />
-                <img src='src/resources/Speaker - Image 2.jpg'
-                     alt='Speaker - Image 2'
-                     aria-hidden={imageIndex !== index}
-                     className='img-slider-img'
-                     style={{translate: `${-100 * imageIndex}%`}}
-                />
+                ))}
             </div>
             <button onClick={handleLeftButtonClick} className='img-slider-btn left-btn' style={{left: 0}} aria-label='View Previous Image'>
                 <ArrowBigLeft aria-hidden />
