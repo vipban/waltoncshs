@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from 'lucide-react'
 import './stylesheets/slideshow.css'
 
-export default function Slideshow() {
+export default function Slideshow({ images }) {
     const [imageIndex, setImageIndex] = useState(0)
     const [startX, setStartX] = useState(0)
     const [endX, setEndX] = useState(0)
